@@ -1,0 +1,84 @@
+<html>
+	<head>
+		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" href="client.css">
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<script src="client.js"></script>
+		<div class="col-md-12">
+			<div class="container">
+				<div id="header">
+					<h1>IoT with SGX: SDN access controller</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="container">
+				<div class="col-md-12">
+					<div id="back_image" class="col-md-6">
+						
+					</div>
+					<div id="form_div" class="col-md-6">
+						<h1> Implement New Policy </h1>
+
+						<form action="javascript:submitForm();">
+							<div id="src_ip" class="form-group">
+								<label for="srcIp">Src Ip : </label>
+								<input type="number" min="0" max="255" id="srcip_1">
+								<input type="number" min="0" max="255" id="srcip_2">
+								<input type="number" min="0" max="255" id="srcip_3">
+								<input type="number" min="0" max="255" id="srcip_4">
+							</div>
+
+							<div id="dst_ip" class="form-group">
+								<label for="srcIp">Dst Ip : </label>
+								<input type="number" min="0" max="255" id="dstip_1">
+								<input type="number" min="0" max="255" id="dstip_2">
+								<input type="number" min="0" max="255" id="dstip_3">
+								<input type="number" min="0" max="255" id="dstip_4">
+							</div>
+
+							<div class="form-group">
+								<label for="isProcess">Require Processing : </label>
+								<select id="is_process">
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="scrubData">Scrub Data : </label>
+								<select id="scrub_data">
+									<option>No Scrubing</option>
+									<option>Mild Scrubing</option>
+									<option>Intermediate Scrubing</option>
+									<option>Excessive Scrubing</option>
+								</select>
+
+							</div>
+
+							<button type="submit" class="btn btn-success">Submit</button>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12">
+			<div class="container">
+				<div id="footer">
+					<h4>Source IP: enter source IP of flow on which you want to implement this new policy. </h4>
+					<h4>Destination IP: enter destination IP of flow on which you want to implement this new policy. </h4>
+					<h4>Require Processing: Is processing required or not? </h4>
+					<h4>Scrub data: Choose the desired scrubing option from the dropdown menu</h4>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

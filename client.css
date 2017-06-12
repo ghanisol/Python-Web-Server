@@ -1,0 +1,44 @@
+html {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	display: inline;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #182445;
+	color : white;
+}
+
+#header {
+	text-align: center;
+}
+
+#form_div {
+	padding-top: 20px;
+}
+
+#src_ip input {
+	width : 50px;
+	color: black;
+}
+
+#dst_ip input {
+	width : 50px;
+	color: black;
+}
+
+#is_process {
+	width: 60px;
+	color: black;
+}
+
+#scrub_data {
+	width: 170px;
+	color: black;
+}
+
+#footer {
+	padding-top: 50px;
+}
